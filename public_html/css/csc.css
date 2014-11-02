@@ -1,0 +1,151 @@
+body, html, #trans-target {
+  height: 100% !important;
+  margin: 0px;
+}
+
+#site-wrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+#site-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#site-menu {
+  width: 340px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: -300px;
+  background-color: #dcccb9;
+  padding: 1em;
+}
+
+#site-menu .left {
+  float: left;
+  position: relative;
+}
+
+#site-menu .right {
+  float: right;
+  position: relative;
+  z-index: 2000;
+}
+
+.detail1 #site-menu {
+  background-color: #dcccb9;
+}
+
+.detail2 #site-menu {
+  background-color: #acf869;
+}
+
+.top-panel {  
+  position: relative;
+  height: 50%;
+  background-color: #dcccb9;
+}
+
+.bottom-panel {
+  position: relative;
+  height: 50%;
+  background-color: #acf869;
+}
+
+.content-panel {  
+  padding-left: 5em;
+}
+
+.segment {
+  position: relative;
+  padding: 1em 1em;
+}
+
+.cd-fixed-bg {
+  min-height: 100%;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("../images/img0.jpg");
+  margin-bottom: -100px;
+}
+
+#site-canvas {
+  transform: translateX(0);
+  transition: 0.5s ease-in;
+}
+
+#site-canvas .panel {
+  animation-duration: 1.4s;
+  transition-timing-function: ease-in;
+  animation-fill-mode: both; 
+}
+
+#site-wrapper.show-nav #site-canvas {
+  transform: translateX(300px);
+}
+
+#site-canvas .panel-enter-fadein {
+  animation-name: enterFadeIn;
+}
+
+#site-canvas .panel-enter-fadeindown {
+  animation-name: enterFadeInDown;
+}
+
+#site-canvas .panel-enter-fadeinup {
+  animation-name: enterFadeInUp;
+}
+
+.is-exiting #site-canvas .panel-exit-fadeout {
+  animation-name: exitFadeOut; 
+}
+
+.is-exiting #site-canvas.first .top-panel.panel-exit {
+  animation-name: exitScaleDown;
+}
+
+.is-exiting .segment {
+  animation-name: exitFadeOut;
+}
+
+.is-exiting #site-canvas.first .bottom-panel.panel-exit {
+  animation-name: exitMoveDown;
+}
+
+.is-exiting #site-canvas.second .top-panel.panel-exit {
+  animation-name: exitMoveUp; 
+}
+
+.is-exiting #site-canvas.second .bottom-panel.panel-exit {
+  animation-name: scaleUp; 
+}
+
+#site-canvas .panel-enter-slideleft {
+  animation-name: slideLeft; 
+}
+
+#trans-target.is-exiting #site-canvas.detail1 .panel-exit-scaleupright {
+  animation-name: scaleUpRight;
+}
+
+#trans-target.is-exiting #site-canvas.detail2 .panel-exit-scaledownright {
+  animation-name: scaleDownRight;
+}
+
+#trans-target #site-canvas .panel-enter-scaleleft {
+  animation-name: scaleLeft;
+}
+
+.panel-enter-slideright {
+  animation-name: slideRight;
+}
