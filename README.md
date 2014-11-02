@@ -10,6 +10,6 @@ This site tries to handle page transitions with different enter and exit animati
 - offcanvas menu built with help of http://scotch.io/tutorials/off-canvas-menus-with-css3-transitions-and-transforms
 - hamburger menu button is built based on http://sarasoueidan.com/blog/navicon-transformicons/
 
-I don't claim, that this is the cleanest code ever, so I will be thanful for any improvement suggestions.
+I don't claim, that this is the cleanest code ever, so I will be thankful for any improvement suggestions.
 
 
