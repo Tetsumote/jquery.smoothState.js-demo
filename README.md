@@ -3,7 +3,7 @@ jquery.smoothState.js-demo
 
 this is a demo page for jquery.smoothState.js plugin
 
-This site tries to handle page transitions with different enter and exit animations. It uses following plugins:
+This site handles page transitions with different enter and exit animations. It uses following plugins:
 
 - smoothState.js (with jquery) - http://weblinc.github.io/jquery.smoothState.js/
 - prefixfree - http://lea.verou.me/prefixfree/
